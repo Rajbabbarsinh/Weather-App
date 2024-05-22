@@ -70,7 +70,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2>{"Warangal"}</h2>
+      <h2>{"Vadodara"}</h2>
       <div className="weather-report">
         <div className="left">
           <img src="images/cloudy.png" alt="cloud" />
@@ -87,8 +87,8 @@ function App() {
             </div>
           </div>
           <div className="parameters">
-            <span>Humidity: {report.humidity}</span>
-            <span>Wind Speed: {report.windSpeed}</span>
+            <h3>Humidity: {report.humidity}</h3>
+            <h3>Wind Speed: {report.windSpeed}</h3>
           </div>
         </div>
         <div className="right">
@@ -105,7 +105,3 @@ function App() {
 
 export default App;
 
-// when do we need useEffect hook ?
-// API calls has to be made inside useEffect's callback.
-
-// An effect can return another function(cleanup) or nothing.

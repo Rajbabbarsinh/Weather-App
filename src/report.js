@@ -1,4 +1,4 @@
-const apiKey = "YOUR_TOKEN";
+const apiKey = "0f0c3e06a7195d6ce03803f9ebb4a8c5";
 
 export function getGeoLocation() {
   return new Promise((resolve, reject) => {
@@ -27,51 +27,3 @@ export async function fetchWeatherReport({ latitude, longitude }) {
     return { success: false };
   }
 }
-
-const dummyReport = {
-  coord: {
-    lon: 79.6479,
-    lat: 17.5914,
-  },
-  weather: [
-    {
-      id: 502,
-      main: "Rain",
-      description: "heavy intensity rain",
-      icon: "10n",
-    },
-  ],
-  base: "stations",
-  main: {
-    temp: 299.01,
-    feels_like: 299.79,
-    temp_min: 299.01,
-    temp_max: 299.01,
-    pressure: 1011,
-    humidity: 82,
-    sea_level: 1011,
-    grnd_level: 984,
-  },
-  visibility: 10000,
-  wind: {
-    speed: 1.16,
-    deg: 127,
-    gust: 2.48,
-  },
-  rain: {
-    "1h": 4.6,
-  },
-  clouds: {
-    all: 99,
-  },
-  dt: 1715874798,
-  sys: {
-    country: "IN",
-    sunrise: 1715818133,
-    sunset: 1715864813,
-  },
-  timezone: 19800,
-  id: 1264409,
-  name: "Mahbūbābād",
-  cod: 200,
-};
